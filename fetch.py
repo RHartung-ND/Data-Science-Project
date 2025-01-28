@@ -40,11 +40,14 @@ def scrape_bible_passage(url):
         df = pd.DataFrame(columns=['Book', 'Chapter','Verse', 'Text'])
 
         # remove footnotes section and subsequent text
-        idx = 0
-        while True:
-            if arr[idx] == 'Footnotes':
-                break
-            idx += 1
+        try:
+            idx = 0
+            while True:
+                if arr[idx] == 'Footnotes':
+                    break
+                idx += 1
+        except IndexError:
+            print("no footnotes")
 
         arr = arr[:idx]
 
@@ -97,8 +100,8 @@ def scrape_bible_passage(url):
 
 
 if __name__ == "__main__":
-    for i in range(1, 29):
-        book = "Matthew"
+    for i in range(1, 17):
+        book = "Romans"
         chapter = i
         bible = "NRSVCE"
         
