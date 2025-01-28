@@ -77,7 +77,7 @@ def scrape_bible_passage(url):
                     text += arr[idx] + " "
                     idx += 1
             except IndexError:
-                df = pd.concat([df, pd.DataFrame([['Matthew', chapter, verse, text]], columns=df.columns)], ignore_index=True)
+                df = pd.concat([df, pd.DataFrame([[book, chapter, verse, text]], columns=df.columns)], ignore_index=True)
                 break
 
         # Create the directory
@@ -100,13 +100,15 @@ def scrape_bible_passage(url):
 
 
 if __name__ == "__main__":
-    for i in range(1, 17):
-        book = "Romans"
-        chapter = i
-        bible = "NRSVCE"
-        
-        # URL of the Bible passage
-        url = f"https://www.biblegateway.com/passage/?search={book}%20{chapter}&version={bible}"
+    books_and_chapters = [["Matthew", 28], ["Mark", 16], ["Luke", 24], ["John", 21], ["Acts", 28], ["Romans", 16]]
+    for i in range(len(books_and_chapters)):
+        for j in range(1, books_and_chapters[i][1] + 1):
+            book = books_and_chapters[i][0]
+            chapter = j
+            bible = "NRSVCE"
+            
+            # URL of the Bible passage
+            url = f"https://www.biblegateway.com/passage/?search={book}%20{chapter}&version={bible}"
 
-        # Scrape the text
-        passage_text = scrape_bible_passage(url)
+            # Scrape the text
+            passage_text = scrape_bible_passage(url)
