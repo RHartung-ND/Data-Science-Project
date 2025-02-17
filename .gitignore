@@ -172,3 +172,7 @@ cython_debug/
 
 # Ignores movie dataset files.
 movie-data/
+
+# Ignores the massive collection of collab example files he gave us in canvas.
+Example-Collabs/
+
