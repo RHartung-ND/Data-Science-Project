@@ -1,19 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# ##### Neural Network
-# 
-# The goal of this file is to implement a neural network model. 
-
-# In[17]:
-
-
-# Columns for reference
 columns = ['un_profitability', 'vote_average', 'vote_count', 'revenue', 'runtime', 'budget', 'popularity', 'actor_avg', 'actor_med', 'actor_dev', 'production_avg', 'production_med', 'production_dev', 'release_year', 'release_month', 'original_title_matches', 'profit', 'original_language_english', 'american_film', 'english_language']
-
-
-# In[6]:
-
 
 import pandas as pd
 import numpy as np
