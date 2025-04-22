@@ -13,7 +13,7 @@ st.title("Looking at the IMDB Movie Dataset")
 
 df = pd.read_csv("movie-data/cleaned_analysis_data.csv")
 
-uploaded_file = "movie-data/cleaned_analysis_data.csv"#st.file_uploader("Upload your dataset (CSV)", type=["csv"])
+uploaded_file = st.file_uploader("Upload your dataset (CSV)", type=["csv"])
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
     example_df = df.copy()
