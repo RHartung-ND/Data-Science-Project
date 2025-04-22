@@ -1,9 +1,7 @@
 #!/usr/bin/env python
-# coding: utf-8
 import pandas as pd
 from sklearn.naive_bayes import GaussianNB
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-from sklearn.metrics import confusion_matrix, classification_report
+from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
 def gnb_model(df, state):
@@ -14,8 +12,6 @@ def gnb_model(df, state):
     naive_bayes_model = GaussianNB()
     naive_bayes_model.fit(X_train, Y_train)
     Y_prediction = naive_bayes_model.predict(X_test)
-    # print("Classification Report:\n", classification_report(Y_test, Y_prediction))
-
     return accuracy_score(Y_test, Y_prediction)
 
 
