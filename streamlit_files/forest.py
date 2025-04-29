@@ -1,7 +1,8 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import precision_score, recall_score, f1_score
+
 
 def forest_model(df, n_estimators = 100, max_depth = 80, random_state = 42):
     df = df.drop(columns=['budget', 'profit', 'revenue'])
@@ -12,7 +13,7 @@ def forest_model(df, n_estimators = 100, max_depth = 80, random_state = 42):
     X = pd.get_dummies(X)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=random_state)
 
-    class_weight = 'balanced'  # Handle imbalance by weighting classes
+    class_weight = 'balanced'
 
     rf_model = RandomForestClassifier(n_estimators=n_estimators,
                                     max_depth=max_depth,
@@ -24,7 +25,13 @@ def forest_model(df, n_estimators = 100, max_depth = 80, random_state = 42):
 
     accuracy = (y_test == y_pred).sum() / len(y_test)
 
-    return rf_model, accuracy, X.columns
+
+    # For binary classification
+    precision = precision_score(y_test, y_pred, zero_division=0)
+    recall = recall_score(y_test, y_pred, zero_division=0)
+    f1 = f1_score(y_test, y_pred, zero_division=0)
+    
+    return rf_model, X.columns, accuracy, precision, recall, f1
 
 
 if __name__ == "__main__":
