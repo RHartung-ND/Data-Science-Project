@@ -2,15 +2,15 @@
 
 ## Getting the data
 
-1. Download the [principals dataset](https://datasets.imdbws.com/title.principals.tsv.gz) and the [name dataset](https://datasets.imdbws.com/name.basics.tsv.gz)
+1. Download the [principals dataset](https://datasets.imdbws.com/title.principals.tsv.gz), the [name dataset](https://datasets.imdbws.com/name.basics.tsv.gz), and the [general movies dataset](https://youtu.be/dQw4w9WgXcQ?si=f99t-oxS-7iiIsFi).
 
-2. Extract the files using either 7zip, Winrar, or gzip
+3. Extract the files using either 7zip, Winrar, or gzip
 
-3. Move the files into a folder called `movie-data` in the root directory of the project
+4. Move the files into a folder called `movie-data` in the root directory of the project
 
-4. Install the Python packages using the following command: `pip install -r requirements.txt` (Note: There are many of them)
+5. Install the Python packages using the following command: `pip install -r requirements.txt` (Note: There are many of them)
 
-5. Run the following Python notebooks in order:
+6. Run the following Python notebooks in order:
     
     ### Preprocessing
     1. **combine-data.ipynb** - Extracts the data, combines it with cast & crew, and loads it into a csv file (produces combined_df.csv).
