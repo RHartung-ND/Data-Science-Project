@@ -20,3 +20,24 @@
     ### Analysis
 
     4. **analysis.ipynb** - Displays statistics on the data such as counts, averages, standard deviations, and correlations. Calculated profit and unprofitability scores and calculated correlations with non-profitability. Also calculates baseline predictions at 64%. Saved final dataset containing highest correlations as a csv (cleaned_analysis_data.csv).
+
+## The different machine learning models
+
+To run one of the various machine learning models, open the corresponding notebook and run every single cell. (note: tensorflow isn't included in the requirements file, so if you want to run the neural network model you will have to download it manually from [this link](https://www.tensorflow.org/install/pip))
+
+| File                        | Model                                                   | Accuracy |
+|----------------------------|----------------------------------------------------------|----------|
+| gaussian-naive-bayes.ipynb | GaussianNB                                               | 45%      |
+| svm.ipynb                  | Support Vector Machine                                   | 53%      |
+| baseline.ipynb            | Calculates baseline confusion matrix predictions on 50/50 splits and 80/20 splits. | 64%      |
+| regression.ipynb          | Logistic regression                                      | 65%      |
+| KNN.ipynb                  | K-nearest neighbor                                       | 70%      |
+| decision_tree.ipynb       | Decision Tree model                                      | 75%      |
+| neural.ipynb              | Basic neural network                                     | 78%      |
+| forest.ipynb              | Random forest model                                      | 83%      |
+| gradient_boost.ipynb      | Two gradient boost models                                | 84%      |
+
+
+## Streamlit application
+
+To run the Streamlit application, type the following command into the terminal: `streamlit run streamlit.py`. This should run the application on your local machine in your default web browser.
