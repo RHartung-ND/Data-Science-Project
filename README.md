@@ -2,7 +2,7 @@
 
 ## Getting the data
 
-1. Download the [principals](https://datasets.imdbws.com/title.principals.tsv.gz) dataset and the name [dataset](https://datasets.imdbws.com/name.basics.tsv.gz)
+1. Download the [principals dataset](https://datasets.imdbws.com/title.principals.tsv.gz) and the [name dataset](https://datasets.imdbws.com/name.basics.tsv.gz)
 
 2. Extract the files using either 7zip, Winrar, or gzip
 
