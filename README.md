@@ -8,7 +8,9 @@
 
 3. Move the files into a folder called `movie-data` in the root directory of the project
 
-4. Run the following Python notebooks in order:
+4. Install the Python packages using the following command: `pip install -r requirements.txt`
+
+5. Run the following Python notebooks in order:
     
     ### Preprocessing
     1. **combine-data.ipynb** - Extracts the data, combines it with cast & crew, and loads it into a csv file (produces combined_df.csv).
