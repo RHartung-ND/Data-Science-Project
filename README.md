@@ -8,7 +8,7 @@
 
 3. Move the files into a folder called `movie-data` in the root directory of the project
 
-4. Install the Python packages using the following command: `pip install -r requirements.txt`
+4. Install the Python packages using the following command: `pip install -r requirements.txt` (Note: There are many of them)
 
 5. Run the following Python notebooks in order:
     
@@ -25,7 +25,7 @@
 
 ## The different machine learning models
 
-To run one of the various machine learning models, open the corresponding notebook and run every single cell. (note: tensorflow isn't included in the requirements file, so if you want to run the neural network model you will have to download it manually from [this link](https://www.tensorflow.org/install/pip))
+To run one of the various machine learning models, open the corresponding notebook and run every single cell. 
 
 | File                        | Model                                                   | Accuracy |
 |----------------------------|----------------------------------------------------------|----------|
@@ -42,4 +42,4 @@ To run one of the various machine learning models, open the corresponding notebo
 
 ## Streamlit application
 
-To run the Streamlit application, type the following command into the terminal: `streamlit run streamlit.py`. This should run the application on your local machine in your default web browser.
+To run the Streamlit application, type the following command into the terminal: `streamlit run demo.py`. This should run the application on your local machine in your default web browser.
