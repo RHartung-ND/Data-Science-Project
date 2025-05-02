@@ -36,7 +36,7 @@ To run one of the various machine learning models, open the corresponding notebo
 | KNN.ipynb                  | K-nearest neighbor                                       | 70%      |
 | decision_tree.ipynb       | Decision Tree model                                      | 75%      |
 | neural.ipynb              | Basic neural network                                     | 78%      |
-| forest.ipynb              | Random forest model                                      | 83%      |
+| forest.ipynb              | Random forest model                                      | 84%      |
 | gradient_boost.ipynb      | Two gradient boost models                                | 84%      |
 
 
