@@ -2,9 +2,9 @@
 
 ## Getting the data
 
-1. Download the [principals dataset](https://datasets.imdbws.com/title.principals.tsv.gz), the [name dataset](https://datasets.imdbws.com/name.basics.tsv.gz), and the [general movies dataset](https://youtu.be/dQw4w9WgXcQ?si=f99t-oxS-7iiIsFi).
+1. Download the [principals dataset](https://datasets.imdbws.com/title.principals.tsv.gz), the [name dataset](https://datasets.imdbws.com/name.basics.tsv.gz), and the [general movies dataset](https://www.kaggle.com/datasets/anandshaw2001/imdb-data).
 
-3. Extract the files using either 7zip, Winrar, or gzip
+3. Extract the files using either 7zip, Winrar, or gzip. For the IMDb dataset, rename it to `Imdb_Movie_Dataset.csv`
 
 4. Move the files into a folder called `movie-data` in the root directory of the project
 
